@@ -1,6 +1,6 @@
 {
   "name": "@kadira/storybook",
-  "version": "2.35.4",
+  "version": "2.35.5",
   "description": "React Storybook: Isolate React Component Development with Hot Reloading.",
   "repository": {
     "type": "git",
@@ -58,14 +58,13 @@
     "style-loader": "0.13.1",
     "url-loader": "^0.5.7",
     "uuid": "^2.0.3",
-    "webpack": "^2.2.1",
-    "webpack-dev-middleware": "^1.10.0",
-    "webpack-hot-middleware": "^2.13.2"
+    "webpack-dev-middleware": "^1.10.1",
+    "webpack-hot-middleware": "^2.17.1"
   },
   "peerDependencies": {
     "react": "^0.14.7 || ^15.0.0",
     "react-dom": "^0.14.7 || ^15.0.0",
-    "webpack": "^2.2.1"
+    "webpack": "^2.3.2"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
@@ -88,7 +87,8 @@
     "react": "^15.0.0",
     "react-addons-test-utils": "^15.0.1",
     "react-dom": "^15.0.0",
-    "sinon": "^1.17.3"
+    "sinon": "^1.17.3",
+    "webpack": "^2.3.2"
   },
   "main": "dist/client/index.js",
   "bin": {
