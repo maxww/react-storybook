@@ -72,10 +72,7 @@ export default function (configType, baseConfig, configDir) {
       ...config.module,
       // We need to use our and custom rules.
       ...customConfig.module,
-      rules: [
-        ...config.module.rules,
-        ...customConfig.module.rules || [],
-      ],
+      rules: customConfig.module.rules || config.module.rules,
     },
     resolve: {
       ...config.resolve,
@@ -85,6 +82,7 @@ export default function (configType, baseConfig, configDir) {
         ...(customConfig.resolve && customConfig.resolve.alias),
       },
     },
+    resolveLoader: customConfig.resolveLoader || config.resolveLoader,
   };
 
   return newConfig;
